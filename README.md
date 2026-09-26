@@ -115,6 +115,7 @@ data:
 
 - [cbywyz/ha-midea-hualing-ac](https://github.com/cbywyz/ha-midea-hualing-ac) —— 美的/华凌**空调**云端接入教程（midea_auto_cloud）：为什么华凌空调只能走云端、美居账号配置流程、实体对照表、与本地 midea_ac_lan 共存。空调有 WiFi 走云端，本仓库的风扇没 WiFi 走红外，正好互补。
 - [cbywyz/gree-yapqf-broadlink-smartir](https://github.com/cbywyz/gree-yapqf-broadlink-smartir) —— 格力空调（YAPQF）Broadlink + SmartIR 接入教程：与本仓库同源的 Broadlink 红外路线，SmartIR 码表排坑经验很全。
+- [cbywyz/phicomm-aircat-m1](https://github.com/cbywyz/phicomm-aircat-m1) —— 斐讯悟空 M1 空气检测仪本地复活（自建集成），温湿度/PM2.5/甲醛数据源。
 
 ## 八、参考
 
