@@ -1,0 +1,155 @@
+# 华凌风扇（WH-FGA2401）面板遥控示例
+# Bubble Card 弹窗 + Mushroom chips，两行 9 颗按钮。
+# 把 remote.pang_lu_rm3yao_kong 换成你自己的 remote 实体。
+#
+# 用法一：码已用 learn_command 学进 RM3（device: hualing_fan）→ 保持 data.device+command 不变
+# 用法二：直接用仓库 codes/hualing_whfga2401.json 里的裸码 → 把 data 整个换成 {"command": "<裸码>"}
+#
+# 放置方式（任选）：
+#   1) 整段贴进仪表盘，作为弹窗挂载（需 HACS 安装 bubble-card / mushroom-card）；
+#   2) 只取其中 mushroom-chips-card 部分，嵌到你现有的垂直堆叠里。
+
+type: custom:bubble-card
+card_type: pop-up
+hash: "#fan"
+name: 华凌风扇 · 红外遥控
+icon: mdi:fan
+popup_mode: fit-content
+popup_style: bubble
+bg_opacity: 90
+bg_blur: 10
+shadow_opacity: 50
+width_desktop: 480px
+cards:
+  # 说明行
+  - type: markdown
+    content: >-
+      红外遥控，无状态反馈（面板不显示风扇当前开关）。
+      风速+/− 调档；摇头分左右/上下；循环风/自选风为风型切换。
+
+  # 第一行：开关 / 风速 / 摇头
+  - type: custom:mushroom-chips-card
+    alignment: center
+    chips:
+      - &fan_chip
+        type: template
+        icon: mdi:power
+        icon_color: green
+        content: 开/关
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: power
+      - type: template
+        <<: *fan_chip
+        icon: mdi:fan-plus
+        icon_color: blue
+        content: 风速+
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: speed
+      - type: template
+        <<: *fan_chip
+        icon: mdi:fan-minus
+        icon_color: blue
+        content: 风速−
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: speed_down
+      - type: template
+        <<: *fan_chip
+        icon: mdi:arrow-left-right
+        icon_color: teal
+        content: 摇头
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: osc
+      - type: template
+        <<: *fan_chip
+        icon: mdi:arrow-up-down
+        icon_color: teal
+        content: 上下摇头
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: osc_ud
+
+  # 第二行：风型 / 定时 / 关
+  - type: custom:mushroom-chips-card
+    alignment: center
+    chips:
+      - type: template
+        <<: *fan_chip
+        icon: mdi:refresh-circle
+        icon_color: cyan
+        content: 循环风
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: circle_wind
+      - type: template
+        <<: *fan_chip
+        icon: mdi:autorenew
+        icon_color: purple
+        content: 自选风
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: custom_wind
+      - type: template
+        <<: *fan_chip
+        icon: mdi:timer
+        icon_color: amber
+        content: 定时
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: timer
+      - type: template
+        <<: *fan_chip
+        icon: mdi:power-off
+        icon_color: red
+        content: 关
+        tap_action:
+          action: perform-action
+          perform_action: remote.send_command
+          target:
+            entity_id: remote.pang_lu_rm3yao_kong
+          data:
+            device: hualing_fan
+            command: power
