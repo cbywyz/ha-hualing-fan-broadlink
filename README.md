@@ -111,7 +111,11 @@ data:
 
 **一句话总结**：无 WiFi 的风扇，别在云端和码库里找了，RM3 + 学习模式（或本仓库现成码）是唯一正路。
 
-## 七、参考
+## 七、相关仓库
+
+- [cbywyz/ha-midea-hualing-ac](https://github.com/cbywyz/ha-midea-hualing-ac) —— 美的/华凌**空调**云端接入教程（midea_auto_cloud）：为什么华凌空调只能走云端、美居账号配置流程、实体对照表、与本地 midea_ac_lan 共存。空调有 WiFi 走云端，本仓库的风扇没 WiFi 走红外，正好互补。
+
+## 八、参考
 
 - [SmartIR](https://github.com/smartHomeHub/SmartIR)（空调/电视码库可参考，风扇无美的系）
 - [Broadlink 集成文档](https://www.home-assistant.io/integrations/broadlink/)
