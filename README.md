@@ -10,7 +10,7 @@
 - [cbywyz/ha-midea-hualing-ac](https://github.com/cbywyz/ha-midea-hualing-ac) —— 美的/华凌**空调**云端接入教程（midea_auto_cloud）：为什么华凌空调只能走云端、美居账号配置流程、实体对照表、与本地 midea_ac_lan 共存。空调有 WiFi 走云端，本仓库的风扇没 WiFi 走红外，正好互补。
 - [cbywyz/gree-yapqf-broadlink-smartir](https://github.com/cbywyz/gree-yapqf-broadlink-smartir) —— 格力空调（YAPQF）Broadlink + SmartIR 接入教程：与本仓库同源的 Broadlink 红外路线，SmartIR 码表排坑经验很全。
 - [cbywyz/phicomm-aircat-m1](https://github.com/cbywyz/phicomm-aircat-m1) —— 斐讯悟空 M1 空气检测仪本地复活（自建集成），温湿度/PM2.5/甲醛数据源。
-- [cbywyz/ha-xiaomi-tv-kids-lock](https://github.com/cbywyz/ha-xiaomi-tv-kids-lock) —— 小米电视**家长管控**教程（HA 自动化）：音量上限锁 + 信号源锁定 + 儿童观看定时锁，管控放在电视外面，没有密码可破。
+- [cbywyz/ha-tv-kids-lock](https://github.com/cbywyz/ha-tv-kids-lock) —— 电视**家长管控**教程（HA 自动化，任意智能电视通用，以小米电视为例）：音量上限锁 + 信号源锁定 + 儿童观看定时锁，管控放在电视外面，没有密码可破。
 
 ---
 
