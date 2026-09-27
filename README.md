@@ -12,7 +12,7 @@
 - [cbywyz/phicomm-aircat-m1](https://github.com/cbywyz/phicomm-aircat-m1) —— 斐讯悟空 M1 空气检测仪本地复活（自建集成），温湿度/PM2.5/甲醛数据源。
 
 ---
-
+- [cbywyz/ha-xiaomi-tv-kids-lock](https://github.com/cbywyz/ha-xiaomi-tv-kids-lock) —— 小米电视**家长管控**教程（HA 自动化）：音量上限锁 + 信号源锁定 + 儿童观看定时锁，管控放在电视外面，没有密码可破。
 ## 一、为什么华凌风扇只能走红外
 
 华凌风扇（WAHIN 系列）**没有 WiFi 模块**，美居 App 里控制它靠的是「万能遥控器」——那只是 App 里存的一组红外码配置，不是真实联网设备：
