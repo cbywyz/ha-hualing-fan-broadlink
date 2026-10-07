@@ -11,7 +11,6 @@
 - [cbywyz/gree-yapqf-broadlink-smartir](https://github.com/cbywyz/gree-yapqf-broadlink-smartir) —— 格力空调（YAPQF）Broadlink + SmartIR 接入教程：与本仓库同源的 Broadlink 红外路线，SmartIR 码表排坑经验很全。
 - [cbywyz/phicomm-aircat-m1](https://github.com/cbywyz/phicomm-aircat-m1) —— 斐讯悟空 M1 空气检测仪本地复活（自建集成），温湿度/PM2.5/甲醛数据源。
 - [cbywyz/ha-tv-kids-lock](https://github.com/cbywyz/ha-tv-kids-lock) —— 电视**家长管控**教程（HA 自动化，任意智能电视通用，以小米电视为例）：音量上限锁 + 信号源锁定 + 儿童观看定时锁，管控放在电视外面，没有密码可破。
-- [cbywyz/istoreos-caddy-lucky](https://github.com/cbywyz/istoreos-caddy-lucky) —— iStoreOS **公网入口**教程：Caddy 终结 TLS（Let's Encrypt 自动签发/续期）+ LUCKY 反代，标准 443 **免端口**访问家里的服务。上面这些 HA 想在出门在外也能打开，靠的就是这套（含防火墙放行、DDNS、两套域名互备的踩坑实录）。
 
 ---
 
