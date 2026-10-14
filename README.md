@@ -13,6 +13,7 @@
 - [cbywyz/ha-tv-kids-lock](https://github.com/cbywyz/ha-tv-kids-lock) —— 电视**家长管控**教程（HA 自动化，任意智能电视通用，以小米电视为例）：音量上限锁 + 信号源锁定 + 儿童观看定时锁，管控放在电视外面，没有密码可破。
 
 ---
+- [cbywyz/jdcloud-nezha-ax3000-rescue](https://github.com/cbywyz/jdcloud-nezha-ax3000-rescue) —— 京东云哪吒 AX3000 (RE-OS-03U) 刷机变砖与救砖完整实录（TTL/U-Boot 救援、固件选型、eMMC 修复）
 
 ## 一、为什么华凌风扇只能走红外
 
